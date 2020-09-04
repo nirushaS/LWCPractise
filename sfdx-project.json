@@ -1,6 +1,14 @@
 {
   "packageDirectories": [
     {
+      "path": "es-base-objects",
+      "default": false
+    },
+    {
+      "path": "es-base-styles",
+      "default": false
+    },
+    {
       "path": "./LWC-practise",
       "default": true
     }
