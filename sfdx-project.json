@@ -9,7 +9,7 @@
       "default": false
     },
     {
-      "path": "./LWC-practise",
+      "path": "lwc-practise",
       "default": true
     }
   ],
