@@ -1,0 +1,17 @@
+<template>
+    <div>
+    <lightning-layout vertical-align="center">
+        <lightning-layout-item>
+            <lightning-icon 
+                icon-name={icon} 
+                alternative-text={alttext}>
+            </lightning-icon>
+        </lightning-layout-item>
+        <lightning-layout-item padding="horizontal-small">
+            <p>Quote Number: {quote.number}</p>
+            <p>Quote Name: {quote.name}</p>
+            <p>Quote Status: {quote.status}</p>
+        </lightning-layout-item>
+    </lightning-layout>
+    </div>
+</template>

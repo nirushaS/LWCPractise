@@ -9,7 +9,7 @@
       "default": false
     },
     {
-      "path": "lwc-practise",
+      "path": "force-app",
       "default": true
     }
   ],

@@ -1,0 +1,27 @@
+<template>
+    <div class="slds-card">
+        <div style="padding:0.5rem;background-color:#f4f6f9">
+            <table><tr>
+                <td><lightning-icon icon-name="action:new_note" alternative-text="Approved" title="Approved"></lightning-icon>
+                    <p>Create Quote</p></td>
+                <td><button class="slds-button slds-button_icon slds-button_icon-border-filled" title="Revise Quote">
+                    <svg class="slds-button__icon" aria-hidden="true">
+                        <use xlink:href="/_slds/icons/action-sprite/svg/symbols.svg#approval"></use>
+                    </svg>
+                    <span class="slds-assistive-text">Revise Quote</span>
+                </button>
+                <p>Revise Quote</p></td>
+            </tr></table>
+        </div>
+    </div>
+    <div class="slds-card">
+        <ul class="slds-list_vertical slds-has-dividers_bottom-space">
+            <template for:each={quotes} for:item="record">
+                <li class="slds-item" key={record.number}>
+                    <c-quote-tile object="direct" quote={record}
+                    ></c-quote-tile>
+                </li>
+            </template>
+        </ul>
+    </div>
+</template>
